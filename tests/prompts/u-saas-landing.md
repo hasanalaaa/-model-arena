@@ -1,0 +1,3 @@
+Design a landing page for a fictional product called "Orbit", a project-planning tool for remote teams.
+Sections: sticky navbar, hero with headline and a CSS-only product mockup (no images), logo cloud (draw invented logos with text/SVG), 3 feature blocks with small custom SVG illustrations, a testimonial carousel that works, a pricing table with monthly/yearly toggle that updates prices, an FAQ accordion, and a footer.
+It must feel like a top-tier modern product site: a consistent type scale, spacing system, a considered color palette, subtle scroll-triggered animations, hover states, a dark mode toggle, and be fully responsive down to 360px.

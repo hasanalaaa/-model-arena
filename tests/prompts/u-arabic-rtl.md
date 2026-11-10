@@ -1,0 +1,3 @@
+Design a complete landing page entirely in Arabic (right-to-left) for a fictional Iraqi coffee-and-books cafe called "حبر وقهوة".
+It must have correct RTL layout everywhere (direction, alignment, icons and arrows mirrored, numbers and punctuation placed correctly, no broken mixed-direction text), a hero, a menu with prices in Iraqi dinars, an opening-hours table, an events carousel, a reservation form with real validation messages in Arabic, and a footer.
+Use only system fonts but achieve a beautiful Arabic typographic hierarchy (line-height, weight, letter spacing for Arabic). Include a subtle Arabic geometric pattern drawn in SVG/CSS, a light/dark toggle, and make it responsive at 360px.

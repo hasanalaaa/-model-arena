@@ -1,0 +1,3 @@
+Create an original tower-defense game in canvas: a winding path, waves of enemies, and at least 4 tower types with distinct behavior (rapid-fire, splash, slow/freeze, long-range sniper) each with 3 upgrade levels and range preview.
+- At least 4 enemy types (fast, tanky, flying that ignores the path, and a boss), 15+ waves with scaling difficulty, gold economy, lives, speed controls (1x/2x/3x), pause, and a "next wave" button. Towers target by first/strongest/closest (switchable).
+- Particle effects, projectile motion, health bars, a polished stylized art style drawn in code, and a win/lose screen. The game must be balanced so that a reasonable player can win.

@@ -1,0 +1,2 @@
+Draw a luxury chronograph wristwatch face (front view) in SVG with a photorealistic feel: brushed-metal bezel with tachymeter scale, guilloche-patterned dial (generate the pattern with code), applied hour markers with lume, three sub-dials (running seconds, 30-minute counter, 12-hour counter), a date window, a domed sapphire crystal with reflection highlights, and a leather or steel strap.
+Hands are real-time (with a sweeping second hand) and the chronograph works: start/stop/reset buttons drawn at the case side are clickable and drive the sub-dials.

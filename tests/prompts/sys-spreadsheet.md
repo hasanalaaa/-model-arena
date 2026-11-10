@@ -1,0 +1,4 @@
+Build a working spreadsheet in the browser (26 columns A-Z x 100 rows with virtualized rendering or a plain table).
+- Cells accept numbers, text and formulas beginning with "=" using your own parser (no eval): + - * / ^, parentheses, comparison operators, cell references (A1, $A$1), ranges (A1:B5), and functions SUM, AVERAGE, MIN, MAX, COUNT, IF, ROUND, ABS, CONCAT.
+- Dependency tracking: changing a cell recomputes all dependents exactly once, in the right order, and circular references show #CIRC! instead of freezing. Errors show #DIV/0!, #REF!, #NAME?.
+- Excel-like UX: selection, arrow/Tab/Enter navigation, formula bar, F2 edit, copy/paste of ranges with relative reference adjustment, fill handle drag, column resize, bold/color formatting, and a prepopulated example (a small budget with totals).

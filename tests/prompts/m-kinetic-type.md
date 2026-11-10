@@ -1,0 +1,2 @@
+Create a 20-second looping kinetic typography piece using the lines: "Think different." / "Build the future." / "Make it move." / "Ship it."
+Each line must enter and exit with a different, designed animation (not just fade): for example per-letter staggered motion, scale/skew, masks, scrambling, or physics-style drops. Use a strong layout, a limited color palette and clear easing, with background shapes that move in rhythm. All timing is controlled by a single master timeline, and a thin progress bar is shown at the bottom. Press space to pause and resume.

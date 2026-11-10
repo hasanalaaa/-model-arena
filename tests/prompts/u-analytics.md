@@ -1,0 +1,3 @@
+Build a dense but elegant analytics dashboard for an online store. No chart libraries: draw every chart yourself with SVG or canvas.
+Include: KPI cards with sparklines and delta indicators, a line/area chart with hover crosshair and tooltip, a bar chart, a donut chart with legend interaction, a world-less "region heatmap" grid, and a sortable, filterable data table of 40+ generated orders with pagination.
+A date-range selector (7d / 30d / 90d) regenerates all data deterministically and animates the chart transitions. Include light and dark themes, keyboard-accessible controls and a coherent color system suitable for color-blind readers.

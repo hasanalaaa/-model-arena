@@ -1,0 +1,2 @@
+Create an animated SVG scene (single inline SVG, SMIL/CSS animation; JavaScript only for optional extras): a lighthouse on a rocky cliff during a storm at night.
+Elements: layered rolling sea with foam, crashing waves hitting the rocks, dark clouds moving across a moon, rain streaks, occasional lightning flashes lighting the scene, a rotating beam from the lighthouse lamp that sweeps across the water and clouds (with a soft glow), a small ship tossing on the waves. Use gradients, filters and depth layers to make it feel atmospheric and cinematic.

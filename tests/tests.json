@@ -1,0 +1,1245 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "motion",
+      "icon": "🌀",
+      "en": "Motion",
+      "ar": "حركة"
+    },
+    {
+      "id": "physics",
+      "icon": "⚛️",
+      "en": "Physics & Simulation",
+      "ar": "فيزياء ومحاكاة"
+    },
+    {
+      "id": "3d",
+      "icon": "🧊",
+      "en": "3D",
+      "ar": "ثلاثي الأبعاد"
+    },
+    {
+      "id": "ui",
+      "icon": "🖥️",
+      "en": "UI Design",
+      "ar": "تصميم واجهات"
+    },
+    {
+      "id": "svg",
+      "icon": "🎨",
+      "en": "SVG & Drawing",
+      "ar": "SVG ورسم"
+    },
+    {
+      "id": "systems",
+      "icon": "⚙️",
+      "en": "Systems",
+      "ar": "أنظمة"
+    },
+    {
+      "id": "games",
+      "icon": "🎮",
+      "en": "Games",
+      "ar": "ألعاب"
+    },
+    {
+      "id": "generative",
+      "icon": "✨",
+      "en": "Generative & Shaders",
+      "ar": "فن توليدي وشيدرات"
+    }
+  ],
+  "difficulty": [
+    {
+      "level": 1,
+      "icon": "🟢",
+      "en": "Basic",
+      "ar": "أساسي"
+    },
+    {
+      "level": 2,
+      "icon": "🟡",
+      "en": "Hard",
+      "ar": "صعب"
+    },
+    {
+      "level": 3,
+      "icon": "🔴",
+      "en": "Brutal",
+      "ar": "قاسي"
+    }
+  ],
+  "tests": [
+    {
+      "id": "m-hexagon-balls",
+      "category": "motion",
+      "difficulty": 2,
+      "title": {
+        "en": "Balls in a spinning hexagon",
+        "ar": "كرات داخل سداسي يدور"
+      },
+      "criteria": [
+        {
+          "en": "Balls never leave the hexagon or tunnel through walls",
+          "ar": "الكرات ما تطلع من السداسي ولا تخترق الجدران"
+        },
+        {
+          "en": "Ball-ball collisions look physically plausible",
+          "ar": "تصادم الكرات ببعضها يبين منطقي فيزيائياً"
+        },
+        {
+          "en": "Rotating walls push and carry the balls (not just static bounce)",
+          "ar": "الجدران الدوارة تدفع الكرات وتشيلها مو بس ترد"
+        },
+        {
+          "en": "Smooth 60 fps and a polished look",
+          "ar": "سلاسة 60 فريم ومظهر مصقول"
+        }
+      ],
+      "pitfalls": {
+        "en": "Balls slip through corners or get stuck to walls; wall rotation ignored in collision response.",
+        "ar": "الكرات تهرب من الزوايا أو تلتصق بالجدار؛ دوران الجدار ما ينحسب بالتصادم."
+      }
+    },
+    {
+      "id": "m-mechanical-clock",
+      "category": "motion",
+      "difficulty": 3,
+      "title": {
+        "en": "Working gear-train clock",
+        "ar": "ساعة ميكانيكية بمسننات شغالة"
+      },
+      "criteria": [
+        {
+          "en": "Teeth truly interlock with no overlap or gaps",
+          "ar": "الأسنان تتداخل فعلياً بدون تراكب أو فراغ"
+        },
+        {
+          "en": "Rotation directions and speed ratios are correct",
+          "ar": "اتجاهات الدوران ونسب السرعة صحيحة"
+        },
+        {
+          "en": "Hands show the correct real time",
+          "ar": "العقارب تعرض الوقت الحقيقي الصحيح"
+        },
+        {
+          "en": "Escapement and pendulum tick in sync, convincing metal look",
+          "ar": "الميزان والرقاص متزامنين، ومظهر المعدن مقنع"
+        }
+      ],
+      "pitfalls": {
+        "en": "Gears just spin independently with decorative teeth; hands driven by Date() rather than the gear train.",
+        "ar": "المسننات تدور باستقلالية بأسنان زخرفية؛ العقارب مربوطة بـ Date() مو بالمسننات."
+      }
+    },
+    {
+      "id": "m-ik-walker",
+      "category": "motion",
+      "difficulty": 3,
+      "title": {
+        "en": "Procedural walking creature (IK)",
+        "ar": "مخلوق يمشي بالـ IK"
+      },
+      "criteria": [
+        {
+          "en": "Feet stay planted and do not slide",
+          "ar": "الأقدام تبقى ثابتة ما تنزلق"
+        },
+        {
+          "en": "Natural alternating gait",
+          "ar": "مشية متناوبة طبيعية"
+        },
+        {
+          "en": "IK joints never break, stretch or flip",
+          "ar": "مفاصل الـ IK ما تنكسر ولا تتمدد ولا تنقلب"
+        },
+        {
+          "en": "Responds to clicks, smooth turning, good looking",
+          "ar": "يستجيب للنقر ويلف بسلاسة ومظهره حلو"
+        }
+      ],
+      "pitfalls": {
+        "en": "Legs wave in place (sine) instead of real IK stepping; knees flip.",
+        "ar": "الأرجل تتحرك بالجيب بدل خطوات IK حقيقية؛ الركب تنقلب."
+      }
+    },
+    {
+      "id": "m-kinetic-type",
+      "category": "motion",
+      "difficulty": 1,
+      "title": {
+        "en": "Kinetic typography",
+        "ar": "طباعة حركية"
+      },
+      "criteria": [
+        {
+          "en": "Four clearly different and well-eased text animations",
+          "ar": "أربع حركات مختلفة وواضحة وبتسارع متقن"
+        },
+        {
+          "en": "Strong typographic layout and color",
+          "ar": "تنسيق وألوان طباعية قوية"
+        },
+        {
+          "en": "Seamless loop and working pause",
+          "ar": "تكرار سلس وإيقاف مؤقت يشتغل"
+        }
+      ],
+      "pitfalls": {
+        "en": "Every line uses the same fade/slide; hard cuts at the loop point.",
+        "ar": "كل الأسطر بنفس الظهور؛ قطع حاد عند إعادة التكرار."
+      }
+    },
+    {
+      "id": "p-cloth",
+      "category": "physics",
+      "difficulty": 2,
+      "title": {
+        "en": "Tearable cloth",
+        "ar": "قماش يتمزق"
+      },
+      "criteria": [
+        {
+          "en": "Stable, no explosions or jitter",
+          "ar": "مستقر بدون انفجارات أو اهتزاز"
+        },
+        {
+          "en": "Natural folds and wind motion",
+          "ar": "طيات وحركة ريح طبيعية"
+        },
+        {
+          "en": "Tearing works and the pieces behave correctly",
+          "ar": "التمزيق يشتغل والقطع تتصرف صح"
+        },
+        {
+          "en": "Shaded fabric rendering, working controls",
+          "ar": "تظليل قماش حقيقي وأدوات تحكم شغالة"
+        }
+      ],
+      "pitfalls": {
+        "en": "Only a wireframe; cloth stretches like rubber; tearing leaves floating pieces.",
+        "ar": "شبكة خطوط فقط؛ القماش يتمدد مثل المطاط؛ التمزيق يخلي قطع معلقة."
+      }
+    },
+    {
+      "id": "p-fluid",
+      "category": "physics",
+      "difficulty": 3,
+      "title": {
+        "en": "Interactive fluid",
+        "ar": "سوائل تفاعلية"
+      },
+      "criteria": [
+        {
+          "en": "Convincing sloshing, splashing and settling",
+          "ar": "تموّج وتناثر واستقرار مقنع"
+        },
+        {
+          "en": "Stays stable and does not clump or explode",
+          "ar": "يبقى مستقر بدون تكتل أو انفجار"
+        },
+        {
+          "en": "Good-looking fluid rendering",
+          "ar": "عرض جميل للسائل"
+        },
+        {
+          "en": "Interaction and performance",
+          "ar": "التفاعل والأداء"
+        }
+      ],
+      "pitfalls": {
+        "en": "Particles behave like gas or bouncing balls, with no pressure and no cohesion.",
+        "ar": "الجزيئات تتصرف مثل غاز أو كرات متنطّة بدون ضغط وتماسك."
+      }
+    },
+    {
+      "id": "p-softbody",
+      "category": "physics",
+      "difficulty": 2,
+      "title": {
+        "en": "Soft-body blobs",
+        "ar": "أجسام هلامية"
+      },
+      "criteria": [
+        {
+          "en": "Volume preserved and the wobble feels like jelly",
+          "ar": "الحجم محفوظ والاهتزاز يشبه الجيلي"
+        },
+        {
+          "en": "Blob-blob and wall collisions are clean",
+          "ar": "تصادم الأجسام والجدران نظيف"
+        },
+        {
+          "en": "Grab and throw feels good",
+          "ar": "السحب والرمي مريح"
+        },
+        {
+          "en": "Charming visuals, reactive faces",
+          "ar": "مظهر لطيف ووجوه متفاعلة"
+        }
+      ],
+      "pitfalls": {
+        "en": "Blobs deflate or invert; they interpenetrate; the pressure model is missing.",
+        "ar": "الأجسام تنكمش أو تنقلب؛ تخترق بعضها؛ نموذج الضغط ناقص."
+      }
+    },
+    {
+      "id": "p-double-pendulum",
+      "category": "physics",
+      "difficulty": 2,
+      "title": {
+        "en": "Chaotic double pendulum",
+        "ar": "بندول مزدوج فوضوي"
+      },
+      "criteria": [
+        {
+          "en": "Energy is conserved (small drift)",
+          "ar": "الطاقة محفوظة (انحراف صغير)"
+        },
+        {
+          "en": "Visible divergence of the two pendulums over time",
+          "ar": "تباعد واضح بين البندولين مع الوقت"
+        },
+        {
+          "en": "Smooth trails and clear readout",
+          "ar": "مسارات ناعمة وعرض أرقام واضح"
+        },
+        {
+          "en": "Controls work and drag works",
+          "ar": "الأدوات والسحب يشتغلون"
+        }
+      ],
+      "pitfalls": {
+        "en": "Euler integration makes energy blow up; the two pendulums never diverge.",
+        "ar": "تكامل Euler يخلي الطاقة تزيد؛ البندولين ما يتباعدون."
+      }
+    },
+    {
+      "id": "p-sand",
+      "category": "physics",
+      "difficulty": 2,
+      "title": {
+        "en": "Falling-sand playground",
+        "ar": "ملعب الرمل المتساقط"
+      },
+      "criteria": [
+        {
+          "en": "All element interactions work correctly",
+          "ar": "كل تفاعلات العناصر صحيحة"
+        },
+        {
+          "en": "Water levels out and does not leak diagonally",
+          "ar": "الماء يتسوّى وما يتسرب قطرياً"
+        },
+        {
+          "en": "Fire, smoke and plants are convincing",
+          "ar": "النار والدخان والنباتات مقنعة"
+        },
+        {
+          "en": "Good UI and steady frame rate",
+          "ar": "واجهة جيدة وأداء ثابت"
+        }
+      ],
+      "pitfalls": {
+        "en": "Only sand and water exist; fire does not spread; update order causes a visible drift to one side.",
+        "ar": "الرمل والماء فقط؛ النار ما تنتشر؛ ترتيب التحديث يسبب انحياز لجهة."
+      }
+    },
+    {
+      "id": "p-boids",
+      "category": "physics",
+      "difficulty": 1,
+      "title": {
+        "en": "Flocking with a predator",
+        "ar": "سرب طيور ومفترس"
+      },
+      "criteria": [
+        {
+          "en": "Believable flock motion (murmuration)",
+          "ar": "حركة سرب مقنعة"
+        },
+        {
+          "en": "Flock reacts visibly to the predator",
+          "ar": "السرب يتفاعل مع المفترس بوضوح"
+        },
+        {
+          "en": "Smooth performance at 300+",
+          "ar": "أداء سلس مع 300+"
+        },
+        {
+          "en": "Nice rendering, working sliders",
+          "ar": "عرض جميل وشرائح شغالة"
+        }
+      ],
+      "pitfalls": {
+        "en": "Birds clump into one ball or spin in circles; predator is just a repulsion point.",
+        "ar": "الطيور تتكتل بكرة أو تدور بدوائر؛ المفترس مجرد نقطة تنافر."
+      }
+    },
+    {
+      "id": "d-solar",
+      "category": "3d",
+      "difficulty": 2,
+      "title": {
+        "en": "Solar system",
+        "ar": "المجموعة الشمسية"
+      },
+      "criteria": [
+        {
+          "en": "Planets look distinct, procedural textures are convincing",
+          "ar": "الكواكب مميزة والخامات المولّدة مقنعة"
+        },
+        {
+          "en": "Sun-directed lighting and glow",
+          "ar": "إضاءة من الشمس وتوهج"
+        },
+        {
+          "en": "Smooth camera control and focus transitions",
+          "ar": "تحكم كاميرا سلس وانتقال تركيز"
+        },
+        {
+          "en": "Saturn rings, Moon, orbits are all correct",
+          "ar": "حلقات زحل والقمر والمدارات صحيحة"
+        }
+      ],
+      "pitfalls": {
+        "en": "Flat-colored spheres; light comes from the camera; planets are lit all around.",
+        "ar": "كرات بلون واحد؛ الضوء من الكاميرا؛ الكواكب مضاءة من كل الجهات."
+      }
+    },
+    {
+      "id": "d-terrain",
+      "category": "3d",
+      "difficulty": 2,
+      "title": {
+        "en": "Procedural terrain and water",
+        "ar": "تضاريس إجرائية وماء"
+      },
+      "criteria": [
+        {
+          "en": "Terrain looks natural at all scales",
+          "ar": "التضاريس طبيعية بكل المقاييس"
+        },
+        {
+          "en": "Height/slope-based coloring and shading",
+          "ar": "تلوين وتظليل حسب الارتفاع والميل"
+        },
+        {
+          "en": "Water, fog and sky create atmosphere",
+          "ar": "الماء والضباب والسماء تعطي جو"
+        },
+        {
+          "en": "Controls work, performance holds",
+          "ar": "التحكم يشتغل والأداء ثابت"
+        }
+      ],
+      "pitfalls": {
+        "en": "Terrain is a noisy flat mesh with a single color; water is a flat blue plane; camera clips through hills.",
+        "ar": "تضاريس عشوائية بلون واحد؛ الماء مستوي أزرق؛ الكاميرا تخترق التلال."
+      }
+    },
+    {
+      "id": "d-rubik",
+      "category": "3d",
+      "difficulty": 3,
+      "title": {
+        "en": "Rubik's cube scramble & solve",
+        "ar": "مكعب روبيك يتخربط وينحل"
+      },
+      "criteria": [
+        {
+          "en": "Layer turns are correct (no cubie corruption)",
+          "ar": "دوران الطبقات صحيح بدون تلف القطع"
+        },
+        {
+          "en": "Scramble then Solve ends with a truly solved cube",
+          "ar": "الخلط ثم الحل ينتهي بمكعب محلول فعلياً"
+        },
+        {
+          "en": "Smooth animation and good materials",
+          "ar": "حركة سلسة وخامات جيدة"
+        },
+        {
+          "en": "Notation and UI are correct",
+          "ar": "الترميز والواجهة صحيحين"
+        }
+      ],
+      "pitfalls": {
+        "en": "Colors drift after several moves; Solve just teleports; cubies end in wrong positions.",
+        "ar": "الألوان تتخربط بعد حركات؛ الحل يقفز مباشرة؛ القطع بأماكن خطأ."
+      }
+    },
+    {
+      "id": "d-car",
+      "category": "3d",
+      "difficulty": 2,
+      "title": {
+        "en": "Low-poly car you can drive",
+        "ar": "سيارة من أشكال أولية تنساق"
+      },
+      "criteria": [
+        {
+          "en": "The car looks like a car (proportions, details)",
+          "ar": "تبين سيارة فعلاً (نسب وتفاصيل)"
+        },
+        {
+          "en": "Driving feels good, wheels and body animate",
+          "ar": "القيادة مريحة والعجلات والجسم يتحركون"
+        },
+        {
+          "en": "Camera, shadows and lights are convincing",
+          "ar": "الكاميرا والظلال والأضواء مقنعة"
+        },
+        {
+          "en": "Cone interaction and HUD",
+          "ar": "تفاعل المخاريط والعداد"
+        }
+      ],
+      "pitfalls": {
+        "en": "A box on cylinders; car turns like a tank; the wheels do not rotate.",
+        "ar": "صندوق على أسطوانات؛ تلف مثل الدبابة؛ العجلات ما تدور."
+      }
+    },
+    {
+      "id": "d-raymarch",
+      "category": "3d",
+      "difficulty": 3,
+      "title": {
+        "en": "Raymarched shader scene",
+        "ar": "مشهد Raymarching بشيدر خام"
+      },
+      "criteria": [
+        {
+          "en": "Shader compiles and the scene is coherent and beautiful",
+          "ar": "الشيدر يشتغل والمشهد متناسق وجميل"
+        },
+        {
+          "en": "Soft shadows, AO, reflections visible",
+          "ar": "ظلال ناعمة وAO وانعكاس ظاهرين"
+        },
+        {
+          "en": "Animation and camera control",
+          "ar": "حركة وتحكم بالكاميرا"
+        },
+        {
+          "en": "No banding or artifacts, stable performance",
+          "ar": "بدون خطوط أو عيوب وأداء ثابت"
+        }
+      ],
+      "pitfalls": {
+        "en": "Just a sphere over a plane with Lambert shading; black screen from a shader compile error.",
+        "ar": "كرة فوق أرضية بإضاءة بسيطة؛ شاشة سوداء بسبب خطأ ترجمة."
+      }
+    },
+    {
+      "id": "d-product",
+      "category": "3d",
+      "difficulty": 2,
+      "title": {
+        "en": "Product showcase (headphones)",
+        "ar": "عارض منتج (سماعات)"
+      },
+      "criteria": [
+        {
+          "en": "Convincing headphone form from primitives",
+          "ar": "شكل سماعة مقنع من أشكال أولية"
+        },
+        {
+          "en": "Materials and lighting feel premium",
+          "ar": "الخامات والإضاءة فخمة"
+        },
+        {
+          "en": "Smooth color transitions and orbit",
+          "ar": "انتقال لون وتدوير سلس"
+        },
+        {
+          "en": "Polished surrounding UI",
+          "ar": "واجهة محيطة مصقولة"
+        }
+      ],
+      "pitfalls": {
+        "en": "Two spheres and a torus with default material; no lights besides ambient.",
+        "ar": "كرتين وحلقة بخامة افتراضية؛ بدون إضاءة غير المحيطة."
+      }
+    },
+    {
+      "id": "u-saas-landing",
+      "category": "ui",
+      "difficulty": 1,
+      "title": {
+        "en": "SaaS landing page",
+        "ar": "صفحة هبوط SaaS"
+      },
+      "criteria": [
+        {
+          "en": "Visual hierarchy and refined typography/spacing",
+          "ar": "تسلسل بصري وطباعة وتباعد راقيين"
+        },
+        {
+          "en": "All interactive parts really work",
+          "ar": "كل العناصر التفاعلية تشتغل فعلاً"
+        },
+        {
+          "en": "Custom illustrations and mockup quality",
+          "ar": "جودة الرسومات والمجسم"
+        },
+        {
+          "en": "Dark mode and mobile responsiveness",
+          "ar": "الوضع الداكن وتجاوب الموبايل"
+        }
+      ],
+      "pitfalls": {
+        "en": "Generic template look; toggles that do nothing; broken layout on mobile.",
+        "ar": "شكل قالب عادي؛ أزرار ما تعمل شي؛ تخطيط مكسور بالموبايل."
+      }
+    },
+    {
+      "id": "u-analytics",
+      "category": "ui",
+      "difficulty": 2,
+      "title": {
+        "en": "Analytics dashboard (charts from scratch)",
+        "ar": "لوحة تحليلات برسوم من الصفر"
+      },
+      "criteria": [
+        {
+          "en": "Charts are accurate, readable and well-labeled",
+          "ar": "الرسوم دقيقة وواضحة ومسمّاة"
+        },
+        {
+          "en": "Hover/tooltip/crosshair and transitions are smooth",
+          "ar": "التمرير والتلميحات والانتقالات سلسة"
+        },
+        {
+          "en": "Table sort/filter/pagination work",
+          "ar": "الجدول يرتب ويفلتر ويقسّم صفحات"
+        },
+        {
+          "en": "Overall design density and polish",
+          "ar": "كثافة وإتقان التصميم"
+        }
+      ],
+      "pitfalls": {
+        "en": "Static screenshot-like charts; range selector changes nothing; unreadable axis labels.",
+        "ar": "رسوم ثابتة؛ المحدد ما يغيّر شي؛ نصوص المحاور مو مقروءة."
+      }
+    },
+    {
+      "id": "u-music-player",
+      "category": "ui",
+      "difficulty": 2,
+      "title": {
+        "en": "Mobile music player",
+        "ar": "مشغل موسيقى موبايل"
+      },
+      "criteria": [
+        {
+          "en": "Real audio playback and a working visualizer",
+          "ar": "صوت حقيقي ومصوّر طيف شغال"
+        },
+        {
+          "en": "Fluid screen transitions and gestures",
+          "ar": "انتقالات وإيماءات سلسة"
+        },
+        {
+          "en": "Unique, attractive generated album art",
+          "ar": "أغلفة ألبوم مولّدة فريدة وجذابة"
+        },
+        {
+          "en": "Scrubber, queue, shuffle, repeat all function",
+          "ar": "المؤشر والقائمة والعشوائي والتكرار تشتغل"
+        }
+      ],
+      "pitfalls": {
+        "en": "Looks like a static mockup; the progress bar fake; no sound at all.",
+        "ar": "يبين مجسم ثابت؛ شريط التقدم مزيف؛ ما يطلع صوت."
+      }
+    },
+    {
+      "id": "u-arabic-rtl",
+      "category": "ui",
+      "difficulty": 2,
+      "title": {
+        "en": "Arabic RTL page",
+        "ar": "صفحة عربية RTL"
+      },
+      "criteria": [
+        {
+          "en": "Truly correct RTL (mirroring, bidi, numerals)",
+          "ar": "اتجاه RTL صحيح فعلاً (انعكاس وbidi وأرقام)"
+        },
+        {
+          "en": "Natural, well-written Arabic copy",
+          "ar": "نصوص عربية سليمة وطبيعية"
+        },
+        {
+          "en": "Beautiful Arabic typography and pattern",
+          "ar": "طباعة عربية جميلة وزخرفة"
+        },
+        {
+          "en": "Working validation and interactions",
+          "ar": "التحقق والتفاعل يشتغلون"
+        }
+      ],
+      "pitfalls": {
+        "en": "LTR layout with Arabic text pasted in; arrows point the wrong way; Latin punctuation at the wrong end.",
+        "ar": "تخطيط LTR ونص عربي لصقاً؛ أسهم باتجاه خطأ؛ علامات ترقيم بمكان خطأ."
+      }
+    },
+    {
+      "id": "u-weather",
+      "category": "ui",
+      "difficulty": 2,
+      "title": {
+        "en": "Animated weather app",
+        "ar": "تطبيق طقس متحرك"
+      },
+      "criteria": [
+        {
+          "en": "Scenes are beautiful and convincing",
+          "ar": "المشاهد جميلة ومقنعة"
+        },
+        {
+          "en": "Smooth transitions and time scrubbing",
+          "ar": "انتقال وتحريك الوقت بسلاسة"
+        },
+        {
+          "en": "Data widgets are accurate and elegant",
+          "ar": "عناصر البيانات دقيقة وأنيقة"
+        },
+        {
+          "en": "Overall UI polish",
+          "ar": "إتقان الواجهة"
+        }
+      ],
+      "pitfalls": {
+        "en": "Static gradients with emoji; scenes do not respond to the hour.",
+        "ar": "تدرجات ثابتة مع ايموجي؛ المشاهد ما تتأثر بالساعة."
+      }
+    },
+    {
+      "id": "svg-pelican-bike",
+      "category": "svg",
+      "difficulty": 3,
+      "title": {
+        "en": "A pelican riding a bicycle",
+        "ar": "بجعة تركب دراجة"
+      },
+      "criteria": [
+        {
+          "en": "Anatomy of pelican and bicycle are recognizable and correct",
+          "ar": "تشريح البجعة والدراجة صحيح ومميز"
+        },
+        {
+          "en": "Pedals, legs and wheels move in coordination",
+          "ar": "الدواسات والأرجل والعجلات تتحرك بتناسق"
+        },
+        {
+          "en": "Composition, shading and color",
+          "ar": "التكوين والتظليل والألوان"
+        }
+      ],
+      "pitfalls": {
+        "en": "A blob of shapes that only vaguely suggests a bird; the bicycle frame is geometrically wrong.",
+        "ar": "كتلة أشكال تلمح لطائر؛ هيكل الدراجة هندسياً خطأ."
+      }
+    },
+    {
+      "id": "svg-iso-city",
+      "category": "svg",
+      "difficulty": 2,
+      "title": {
+        "en": "Isometric city",
+        "ar": "مدينة أيزومترية"
+      },
+      "criteria": [
+        {
+          "en": "Correct isometric geometry and depth ordering",
+          "ar": "هندسة أيزومترية وترتيب عمق صحيحين"
+        },
+        {
+          "en": "Variety and detail in buildings",
+          "ar": "تنوع وتفاصيل المباني"
+        },
+        {
+          "en": "Animated cars and day/night toggle",
+          "ar": "سيارات متحركة وتبديل نهار/ليل"
+        },
+        {
+          "en": "Cohesive style and lighting",
+          "ar": "أسلوب وإضاءة متناسقين"
+        }
+      ],
+      "pitfalls": {
+        "en": "Depth sorting errors (buildings drawn in front of those that are nearer); flat colors; no animation.",
+        "ar": "أخطاء ترتيب العمق؛ ألوان مسطحة؛ بدون حركة."
+      }
+    },
+    {
+      "id": "svg-watch-face",
+      "category": "svg",
+      "difficulty": 2,
+      "title": {
+        "en": "Realistic watch face",
+        "ar": "وجه ساعة فاخرة واقعي"
+      },
+      "criteria": [
+        {
+          "en": "Realism of materials, reflections and depth",
+          "ar": "واقعية الخامات والانعكاسات والعمق"
+        },
+        {
+          "en": "Accurate dial layout and scales",
+          "ar": "دقة تخطيط الميناء والمقاييس"
+        },
+        {
+          "en": "Real-time hands and a working chronograph",
+          "ar": "عقارب حقيقية وكرونوغراف يشتغل"
+        },
+        {
+          "en": "Fine detail and craft",
+          "ar": "دقة التفاصيل والحرفية"
+        }
+      ],
+      "pitfalls": {
+        "en": "Flat circles with plain gradients; hands that do not match the time; non-functional buttons.",
+        "ar": "دوائر مسطحة بتدرجات بسيطة؛ عقارب لا تطابق الوقت؛ أزرار ما تشتغل."
+      }
+    },
+    {
+      "id": "svg-lighthouse",
+      "category": "svg",
+      "difficulty": 1,
+      "title": {
+        "en": "Animated lighthouse in a storm",
+        "ar": "فنار في عاصفة (متحرك)"
+      },
+      "criteria": [
+        {
+          "en": "Atmosphere and depth layering",
+          "ar": "الأجواء وتعدد الطبقات"
+        },
+        {
+          "en": "Beam, lightning and waves are well animated",
+          "ar": "الشعاع والبرق والأمواج متحركين بإتقان"
+        },
+        {
+          "en": "Drawing quality of the lighthouse, rocks and ship",
+          "ar": "جودة رسم الفنار والصخور والسفينة"
+        },
+        {
+          "en": "Smooth performance",
+          "ar": "أداء سلس"
+        }
+      ],
+      "pitfalls": {
+        "en": "Stacked flat shapes; the beam is a static triangle; effects that flicker harshly.",
+        "ar": "أشكال مسطحة؛ الشعاع مثلث ثابت؛ مؤثرات تومض بحدة."
+      }
+    },
+    {
+      "id": "sys-desktop-os",
+      "category": "systems",
+      "difficulty": 3,
+      "title": {
+        "en": "Mini desktop OS in the browser",
+        "ar": "سطح مكتب بنوافذ وتطبيقات"
+      },
+      "criteria": [
+        {
+          "en": "Window manager behaves like a real one",
+          "ar": "مدير النوافذ يتصرف مثل الحقيقي"
+        },
+        {
+          "en": "Apps are actually functional (terminal and files share an FS)",
+          "ar": "التطبيقات تشتغل فعلاً (الطرفية والملفات بنظام ملفات مشترك)"
+        },
+        {
+          "en": "Design coherence and animations",
+          "ar": "تناسق التصميم والحركات"
+        },
+        {
+          "en": "Robustness: no console errors during use",
+          "ar": "متانة: بدون أخطاء بالـ console"
+        }
+      ],
+      "pitfalls": {
+        "en": "Windows that drag but not resize; apps that are static pictures; the terminal prints fixed text.",
+        "ar": "نوافذ تنسحب بس ما تتكبر؛ تطبيقات صور ثابتة؛ الطرفية تطبع نص ثابت."
+      }
+    },
+    {
+      "id": "sys-node-editor",
+      "category": "systems",
+      "difficulty": 3,
+      "title": {
+        "en": "Node-graph editor",
+        "ar": "محرر عُقد (Node editor)"
+      },
+      "criteria": [
+        {
+          "en": "Wiring UX feels right (types, snapping, highlighting)",
+          "ar": "تجربة التوصيل مريحة"
+        },
+        {
+          "en": "Graph evaluation is correct and live",
+          "ar": "تقييم الرسم صحيح وحي"
+        },
+        {
+          "en": "Pan/zoom/undo/redo/box-select all work",
+          "ar": "التحريك والتكبير والتراجع والتحديد كلها تشتغل"
+        },
+        {
+          "en": "Clean visual design and a good example graph",
+          "ar": "تصميم نظيف ورسم مثال جيد"
+        }
+      ],
+      "pitfalls": {
+        "en": "Wires that detach on pan/zoom; evaluation never updates; no undo.",
+        "ar": "الأسلاك تنفصل بعد التحريك؛ التقييم ما يتحدث؛ لا يوجد تراجع."
+      }
+    },
+    {
+      "id": "sys-spreadsheet",
+      "category": "systems",
+      "difficulty": 3,
+      "title": {
+        "en": "Spreadsheet with formulas",
+        "ar": "جدول بيانات بمعادلات"
+      },
+      "criteria": [
+        {
+          "en": "Formulas evaluate correctly, ranges and absolute refs work",
+          "ar": "المعادلات صحيحة والنطاقات والمراجع المطلقة تشتغل"
+        },
+        {
+          "en": "Dependencies update in the right order, circular refs are handled",
+          "ar": "التبعيات تتحدث بالترتيب والدائرية تنعالج"
+        },
+        {
+          "en": "Excel-like navigation, copy/paste, fill handle",
+          "ar": "تنقل ونسخ ولصق ومقبض تعبئة مثل Excel"
+        },
+        {
+          "en": "Polished and fast",
+          "ar": "مصقول وسريع"
+        }
+      ],
+      "pitfalls": {
+        "en": "Uses eval(); no recomputation of dependents; copy/paste ignores reference shifting.",
+        "ar": "يستخدم eval؛ ما يعيد حساب التابعات؛ اللصق ما يعدّل المراجع."
+      }
+    },
+    {
+      "id": "sys-drum-machine",
+      "category": "systems",
+      "difficulty": 2,
+      "title": {
+        "en": "Drum machine & synth",
+        "ar": "آلة إيقاع بـ WebAudio"
+      },
+      "criteria": [
+        {
+          "en": "Sound quality of synthesized drums",
+          "ar": "جودة أصوات الطبول المولّدة"
+        },
+        {
+          "en": "Tight timing and sequencer features",
+          "ar": "توقيت دقيق وميزات السيكونسر"
+        },
+        {
+          "en": "Pre-programmed patterns that sound musical",
+          "ar": "أنماط جاهزة موسيقية"
+        },
+        {
+          "en": "Visuals, UX and effects",
+          "ar": "المظهر والتجربة والمؤثرات"
+        }
+      ],
+      "pitfalls": {
+        "en": "Clicks and beeps instead of drums; setInterval drift; the playhead is out of sync with sound.",
+        "ar": "نقرات وصفير بدل طبول؛ انحراف setInterval؛ المؤشر مو متزامن مع الصوت."
+      }
+    },
+    {
+      "id": "sys-pixel-editor",
+      "category": "systems",
+      "difficulty": 1,
+      "title": {
+        "en": "Pixel-art editor",
+        "ar": "محرر بكسل آرت"
+      },
+      "criteria": [
+        {
+          "en": "All tools behave correctly (fill, shapes, selection)",
+          "ar": "كل الأدوات تتصرف صح"
+        },
+        {
+          "en": "Layers and animation timeline work",
+          "ar": "الطبقات والخط الزمني يشتغلون"
+        },
+        {
+          "en": "PNG/GIF export produce valid files",
+          "ar": "تصدير PNG وGIF ينتج ملفات صالحة"
+        },
+        {
+          "en": "UX, shortcuts and look",
+          "ar": "التجربة والاختصارات والمظهر"
+        }
+      ],
+      "pitfalls": {
+        "en": "Fill leaks or crashes on big areas; undo breaks layers; GIF export missing.",
+        "ar": "التعبئة تتسرب أو تنهار؛ التراجع يخرّب الطبقات؛ تصدير GIF مفقود."
+      }
+    },
+    {
+      "id": "g-racing",
+      "category": "games",
+      "difficulty": 3,
+      "title": {
+        "en": "Top-down racer with AI opponents",
+        "ar": "سباق من فوق بخصوم ذكاء اصطناعي"
+      },
+      "criteria": [
+        {
+          "en": "Driving feel and physics",
+          "ar": "إحساس القيادة والفيزياء"
+        },
+        {
+          "en": "AI opponents race believably",
+          "ar": "الخصوم يتسابقون بشكل مقنع"
+        },
+        {
+          "en": "Complete race loop with results",
+          "ar": "دورة سباق كاملة مع نتائج"
+        },
+        {
+          "en": "Polish: effects, HUD, sound",
+          "ar": "اللمسات: مؤثرات وواجهة وصوت"
+        }
+      ],
+      "pitfalls": {
+        "en": "AI cars cut through grass or sit still; every track looks the same; laps are counted wrongly.",
+        "ar": "الخصوم يقطعون العشب أو يوقفون؛ كل الحلبات متشابهة؛ العدّ خطأ."
+      }
+    },
+    {
+      "id": "g-tower-defense",
+      "category": "games",
+      "difficulty": 2,
+      "title": {
+        "en": "Tower defense",
+        "ar": "دفاع أبراج"
+      },
+      "criteria": [
+        {
+          "en": "Gameplay loop is complete and balanced",
+          "ar": "حلقة اللعب كاملة ومتوازنة"
+        },
+        {
+          "en": "Towers/enemies are distinct and work as described",
+          "ar": "الأبراج والأعداء مميزين ويشتغلون كما وُصف"
+        },
+        {
+          "en": "Controls and UI are clear",
+          "ar": "التحكم والواجهة واضحة"
+        },
+        {
+          "en": "Visual polish and effects",
+          "ar": "المظهر والمؤثرات"
+        }
+      ],
+      "pitfalls": {
+        "en": "Only one tower type does anything; waves are unwinnable or trivial; flying enemies follow the path.",
+        "ar": "برج واحد يشتغل؛ الموجات مستحيلة أو سهلة؛ الطائرة تمشي بالمسار."
+      }
+    },
+    {
+      "id": "g-platformer",
+      "category": "games",
+      "difficulty": 2,
+      "title": {
+        "en": "Precision platformer",
+        "ar": "لعبة منصات دقيقة"
+      },
+      "criteria": [
+        {
+          "en": "Game feel is excellent (jump, dash, wall)",
+          "ar": "إحساس اللعب ممتاز (قفز، اندفاع، جدار)"
+        },
+        {
+          "en": "Levels teach and escalate well",
+          "ar": "المراحل تعلّم وتتصاعد بشكل جيد"
+        },
+        {
+          "en": "Collision is robust (no tunneling or sticking)",
+          "ar": "التصادم متين بدون اختراق أو التصاق"
+        },
+        {
+          "en": "Visual juice and polish",
+          "ar": "لمسات بصرية وإتقان"
+        }
+      ],
+      "pitfalls": {
+        "en": "Floaty or sticky controls; no coyote time; collision catches on tile seams; levels impossible.",
+        "ar": "تحكم عائم أو لاصق؛ بدون coyote؛ التصادم يعلق بين البلاطات؛ مراحل مستحيلة."
+      }
+    },
+    {
+      "id": "g-chess",
+      "category": "games",
+      "difficulty": 3,
+      "title": {
+        "en": "Chess with a bot",
+        "ar": "شطرنج بحركات قانونية وخصم"
+      },
+      "criteria": [
+        {
+          "en": "Rules are 100% correct including special moves",
+          "ar": "القواعد صحيحة 100% مع الحركات الخاصة"
+        },
+        {
+          "en": "Bot plays sensibly and does not freeze the UI",
+          "ar": "البوت يلعب بشكل معقول بدون تجميد الواجهة"
+        },
+        {
+          "en": "UX: drag/drop, animations, notation, undo",
+          "ar": "التجربة: سحب وتحريك وترميز وتراجع"
+        },
+        {
+          "en": "Piece art and board design",
+          "ar": "رسم القطع وتصميم اللوحة"
+        }
+      ],
+      "pitfalls": {
+        "en": "Allows moving into check; castling through attacked squares; promotion only to queen; bot blunders its queen.",
+        "ar": "يسمح بالحركة داخل الكش؛ تبييت عبر مربعات مهددة؛ ترقية للوزير فقط؛ البوت يخسر وزيره."
+      }
+    },
+    {
+      "id": "gen-flowfield",
+      "category": "generative",
+      "difficulty": 1,
+      "title": {
+        "en": "Flow-field art",
+        "ar": "فن حقول الجريان"
+      },
+      "criteria": [
+        {
+          "en": "Aesthetic quality of the output",
+          "ar": "جمال المخرجات"
+        },
+        {
+          "en": "Seeds are reproducible, palettes are well-chosen",
+          "ar": "البذور قابلة للتكرار والباليتات مختارة جيداً"
+        },
+        {
+          "en": "Performance with many particles",
+          "ar": "الأداء مع جزيئات كثيرة"
+        },
+        {
+          "en": "Interaction and export work",
+          "ar": "التفاعل والتصدير يشتغلان"
+        }
+      ],
+      "pitfalls": {
+        "en": "Particles all collapse into a few lines; muddy colors; seed does not reproduce the image.",
+        "ar": "الجزيئات تنكمش لخطوط قليلة؛ ألوان طينية؛ البذرة ما تعيد نفس الصورة."
+      }
+    },
+    {
+      "id": "gen-fractal",
+      "category": "generative",
+      "difficulty": 2,
+      "title": {
+        "en": "Deep-zoom fractal explorer",
+        "ar": "مستكشف فراكتال بتقريب عميق"
+      },
+      "criteria": [
+        {
+          "en": "Smooth coloring and visually striking output",
+          "ar": "تلوين ناعم ومخرجات لافتة"
+        },
+        {
+          "en": "Deep zoom stays sharp (double-float/perturbation)",
+          "ar": "التقريب العميق يبقى حاد"
+        },
+        {
+          "en": "Interaction is responsive",
+          "ar": "التفاعل سريع الاستجابة"
+        },
+        {
+          "en": "Julia sync, tour, export features",
+          "ar": "مزامنة جوليا والجولة والتصدير"
+        }
+      ],
+      "pitfalls": {
+        "en": "Pixelation at 1e-5 zoom; visible color banding; very slow because of CPU rendering.",
+        "ar": "تبكسل عند 1e-5؛ تدرج لوني متقطع؛ بطيء بسبب CPU."
+      }
+    },
+    {
+      "id": "gen-ocean-shader",
+      "category": "generative",
+      "difficulty": 3,
+      "title": {
+        "en": "Ocean sunset shader",
+        "ar": "شيدر محيط وغروب"
+      },
+      "criteria": [
+        {
+          "en": "Realism of the water, reflections and sun glitter",
+          "ar": "واقعية الماء والانعكاسات وبريق الشمس"
+        },
+        {
+          "en": "Sky and color grading are convincing",
+          "ar": "السماء وتدرج الألوان مقنعة"
+        },
+        {
+          "en": "Stable and smooth (no banding or aliasing)",
+          "ar": "مستقر وسلس بدون تقطع أو تسنّن"
+        },
+        {
+          "en": "Time-of-day animation and controls",
+          "ar": "حركة الوقت والتحكم"
+        }
+      ],
+      "pitfalls": {
+        "en": "Blue plane with sine bumps; no horizon; compile error on some GPUs; heavy banding in the sky.",
+        "ar": "مستوى أزرق بتموجات؛ بدون أفق؛ خطأ ترجمة؛ تقطع ألوان بالسماء."
+      }
+    },
+    {
+      "id": "gen-reaction-diffusion",
+      "category": "generative",
+      "difficulty": 2,
+      "title": {
+        "en": "Reaction-diffusion (Gray-Scott)",
+        "ar": "تفاعل-انتشار (Gray-Scott)"
+      },
+      "criteria": [
+        {
+          "en": "Presets generate the expected, distinct patterns",
+          "ar": "القوالب تنتج الأنماط المتوقعة والمتمايزة"
+        },
+        {
+          "en": "Numerically stable and fast",
+          "ar": "مستقر عددياً وسريع"
+        },
+        {
+          "en": "Beautiful color/emboss rendering",
+          "ar": "عرض لوني وبارز جميل"
+        },
+        {
+          "en": "Interaction and feed-kill map UI",
+          "ar": "التفاعل وواجهة خريطة feed-kill"
+        }
+      ],
+      "pitfalls": {
+        "en": "Presets all produce the same blob; numerical blow-up after a while; very low resolution.",
+        "ar": "القوالب كلها تنتج نفس الشكل؛ انفجار عددي؛ دقة منخفضة جداً."
+      }
+    }
+  ]
+}

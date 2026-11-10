@@ -1,0 +1,3 @@
+Design a mobile music-player app UI (a 390x844 phone frame centered on the page; on small screens it fills the screen).
+It has a library list, a now-playing screen with large generated album art (drawn with CSS/SVG/canvas, unique per track), a working progress scrubber, play/pause/next/previous, shuffle and repeat toggles, a queue sheet that slides up, and a live audio visualizer synthesized with the Web Audio API (generate each of the 5 tracks as a different simple procedurally generated melody so it actually plays sound after the first tap).
+Transitions between screens should be fluid; the dominant color of the UI follows the album art.

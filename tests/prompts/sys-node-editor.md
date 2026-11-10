@@ -1,0 +1,4 @@
+Build a visual node-graph editor for image/number processing, like a tiny Blender/Unreal node editor.
+- Canvas with pan (middle/space-drag) and zoom (wheel), a grid, draggable nodes, ports with typed colors, and cubic-Bezier wires you drag from output to input (type-checked, with highlight on compatible ports). Selecting and deleting nodes/wires, box-select, and undo/redo.
+- Node types (at least 10): Number, Slider, Math (add/mul/sin), Color, Gradient, Noise, Mix, Invert, Blur, and Preview/Output. The graph evaluates live (only recomputing downstream nodes) and shows a thumbnail preview inside nodes that produce images.
+- Right-click to add nodes from a searchable menu, and a prebuilt example graph loaded at start that produces an interesting image. Save/load the graph as JSON via download/upload.
